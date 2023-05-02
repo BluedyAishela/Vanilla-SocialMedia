@@ -7,12 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- Barre de navigation -->
-<ul>
-    <li><a class="active" href="">Accueil</a></li>
-    <li><a href="">Connexion</a></li>
-    <li><a href="">Inscription</a></li>
-</ul>
+<?php include('public/navbar.php') ?>
 <!-- Le reste du contenu -->
 <section class="section-accueil">
 <p>Hi !</p>
