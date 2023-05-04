@@ -22,11 +22,11 @@
     <!--  Formulaire  -->
     <form action="src/connexion_traitement.php" method="post">
         <!-- Vos champs de formulaire ici -->
-        <label for="name">Email</label>
-        <input type="email" id="email" name="user_email">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="user_email" required>
 
         <label for="password">Password</label>
-        <input type="password" id="password" name="user_password">
+        <input type="password" id="password" name="user_password" required>
 
         <input class="btn btn-primary" type="submit" value="Soumettre">
     </form>

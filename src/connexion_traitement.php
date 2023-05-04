@@ -1,4 +1,7 @@
 <?php
+
+use JetBrains\PhpStorm\NoReturn;
+
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -7,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 header('Location: ../connexion.php'); die();
 
-function connexionTraitement() {
+function connexionTraitement(): void {
     require_once '../config.php';
     // On récupère les données du formulaire & on met l'email en minuscule
     $email = htmlspecialchars($_POST["user_email"]);
