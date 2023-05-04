@@ -1,7 +1,5 @@
 <?php
 
-use JetBrains\PhpStorm\NoReturn;
-
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -41,7 +39,7 @@ function connexionTraitement(): void {
         header('Location: ../connexion.php?erreur=validate_email'); die();
     }
     if (password_verify($password, $data['password'])) {
-        $_SESSION['login'] = $data['token'];
+        $_SESSION['token'] = $data['token'];
         header('Location: ../index.php?connexion=success');
         die();
     }

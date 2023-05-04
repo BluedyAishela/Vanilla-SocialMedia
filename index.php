@@ -1,4 +1,4 @@
-<?php // Ce fichier est la page d'accueil ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<?php include('public/navbar.php') ?>
+<?php include('public/navbar.php'); ?>
 <!-- Le reste du contenu -->
 <section class="section-accueil">
 <p>Hi !</p>
