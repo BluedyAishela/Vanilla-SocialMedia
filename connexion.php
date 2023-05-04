@@ -20,7 +20,7 @@
     }
     ?>
     <!--  Formulaire  -->
-    <form method="post">
+    <form action="src/connexion_traitement.php" method="post">
         <!-- Vos champs de formulaire ici -->
         <label for="name">Email</label>
         <input type="email" id="email" name="user_email">
