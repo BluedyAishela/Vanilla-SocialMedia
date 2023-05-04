@@ -25,5 +25,8 @@ A continuer...
 ## 🛢 • Base de données
 
 ## Démarrer le projet 
+``` shell
+$ php -S localhost:8000
+```
 
 ## 👤 • Comptes à utiliser
