@@ -1,26 +1,3 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // La fonction que vous souhaitez exécuter
-    connexionTraitement();
-}
-
-function connexionTraitement() {
-    // Code de votre fonction
-    echo "Le formulaire a été soumis avec succès !";
-    $email = htmlspecialchars($_POST["user_email"]);
-    $password = htmlspecialchars($_POST["user_password"]);
-
-    if (empty($email))
-    {
-        echo "Veuillez rentrer un mail";
-        gestionErreur();
-    }
-    if (empty($password))
-    {
-        echo "Veuillez rentrer un mot de passe";
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
